@@ -3,7 +3,7 @@ import tarfile
 
 
 d = {}
-tar = tarfile.open('C:\\Users\\pavel\\shared_folder\\fun', 'r:')
+tar = tarfile.open('./fun', 'r:')
 
 for member in tar.getmembers():
     f = tar.extractfile(member)
@@ -14,5 +14,5 @@ for member in tar.getmembers():
     s = int(b[1])
     d[s] = b[0]
 for i in sorted(d.keys()):
-    e = open('C:\\Users\\pavel\\shared_folder\\script.c', 'a')
+    e = open('./script.c', 'a')
     e.write(d[i])

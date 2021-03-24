@@ -102,9 +102,11 @@ Let's try to connect via FTP.
 # FTP (FIleZilla)
 
 We find one archive "fun" and file "README" after connection via ftp. Load this files to our local machine.  
-Extracted this archive we see 751 files there, each from its contain part of C program. Try to restore it with our script `restore.py`.
+Extracted this archive we see 751 files there, each from its contain part of C program. Try to restore it with our script:
 
-Compile got program and execute it.
+    python3 restore.py
+
+Compile got program *script.c* and execute it.
 
 ![](./img/ftp_hack_script.png)
 
